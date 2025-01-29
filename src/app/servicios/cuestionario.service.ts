@@ -4,7 +4,7 @@ import { IPregunta } from './../interfaces/interfaces';
 import { Observable } from 'rxjs';
 import { GestionStorageService } from './gestion-storage.service';
 import { Injectable } from '@angular/core';
-
+ 
 
 @Injectable({
   providedIn: 'root'
