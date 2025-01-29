@@ -9,18 +9,20 @@
 <ion-content [fullscreen]="true">
   <!-- Leer todas las preguntas del cuestionario-->
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let item of preguntasService">
       <!-- añadir el logotipo -->
+      <ion-img [src]="item.logotipo"></ion-img>
       <!-- Añadir ion-badge para el caso de acertar la respuesta, contador de intentos y mostrar todos los intentos incorrectos
+       
       -- 1-Si se acierta: Poner color success y mostrarlo a la derecha de la página (ver-> slot)
       -- 2-Si se falla: Poner color danger y mostrarlo a la derecha de la página (ver-> slot)
       -- 3-Si hay intentos incorrectos, mostrarlos con color warning y mostrarlo a la derecha de la página (ver-> slot)
       -->
-
+      <ion-badge slot="end">11</ion-badge>
       <!-- Añadir botón para responder mediante un-->
-
+      <ion-button slot="end" (click)="responder()">Responder</ion-button>
     </ion-item>
   </ion-list>
   <!--Botón de guardar el cuestionario-->
-
+<ion-button >Guardar Cuestionario</ion-button>
 </ion-content>
