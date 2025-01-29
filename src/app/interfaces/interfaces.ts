@@ -7,7 +7,7 @@
 // acierto: True en caso de haber acertado
 export interface IPregunta {
   logotipo: string;
-  respuesta: string;
+  respuesta: string; 
   //No existen en el json
   respuestasIncorrectas: string[];
   intentos: number;
